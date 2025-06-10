@@ -6,13 +6,6 @@ import { TodoList } from "./components/TodoList"
 import { useState, useEffect } from 'react'
 
 function App() {
-  // const todos = [
-  // { input: 'Hello! Add your first todo!', complete: true },
-  // { input: 'Get the groceries!', complete: false },
-  // { input: 'Learn how to web design', complete: false },
-  // { input: 'Say hi to gran gran', complete: true },
-  // ]
-
   const [todos, setTodos] = useState([
     { input: 'Hello! Add your first todo!', complete: true }
   ])
@@ -33,15 +26,6 @@ function App() {
     setTodos(newTodoList)
     handleSaveData(newTodoList)
   }
-
-  // function handleEditTodo(index) {
-  //   step 1 - create a duplicate array
-  //   step 2 - create a new variable and assign the current value of the todo that needs editing to it
-  //   step 3 - set the input value equal to the current value of the todo in question
-  //   step 4 - copy the delete functionality and filter out the todo @ index from the duplicate array
-  //   step 5 - set the todo state equal to the filtered duplicate array
-  //   step 6 - now the user can edit the todo and re-add it when satisfied
-  // }
 
   function handleDeleteTodo(index) {
     let newTodoList = todos.filter((val, valIndex) => {
