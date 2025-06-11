@@ -6,7 +6,7 @@ export function Header(props) {
 
   return (
       <header>
-          <h1 className="text-gradient">You have {todosLength} open {taskOrTasks}.</h1>
+          <h1 className="text-gradient">You have {todosLength} {taskOrTasks}.</h1>
       </header>
   )
 }
